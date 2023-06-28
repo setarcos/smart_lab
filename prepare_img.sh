@@ -20,7 +20,7 @@ sudo mount $1 -o offset=$offset k
 
 sudo resize2fs /dev/loop0
 
-sudo cp install.sh k/root/
+sudo cp *install.sh k/root/
 sudo cp *.png k/root/
 sudo cp *.py  k/root/
 sudo umount k

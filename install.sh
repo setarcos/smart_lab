@@ -9,4 +9,5 @@ apt clean
 apt-get -y install python3-picamera2 python3-torch python3-torchvision python3-soundfile
 apt clean
 pip3 install python_speech_features pyswip sounddevice hmmlearn
+pip3 install tensorboard
 

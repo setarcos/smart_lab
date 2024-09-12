@@ -8,8 +8,8 @@ if [ ! -d k ]; then
     mkdir k
 fi
 
-# Grow the image by 400M
-dd if=/dev/zero bs=1M count=400 >> $1
+# Grow the image by 1G
+dd if=/dev/zero bs=1M count=1024 >> $1
 sector=`/sbin/fdisk -l $1 |grep Linux | gawk '{print $2}'`
 
 # delete the second partition, and create a new one with bigger size
